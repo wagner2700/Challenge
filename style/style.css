@@ -269,4 +269,51 @@ header{
  .buttonTopic{
      display: flex;
      justify-content: center;
+
  }
+ .buttonTopic button{
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);   
+    border:none;
+    width: 133px;
+    height: 33px;
+    border-radius: 4px;
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+
+
+}
+.topic{
+    border: 1px solid #E7E7E7;
+    margin-top: 20px;
+    padding: 30px;
+    height: 150px;
+}
+.titleTopic1{
+    color:#ED7839;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.descriptionTopic1 p{
+    margin: 0px;
+    display: flex;
+    font-family: 'Quicksand';
+    color: #4D4D4D;
+}
+.topic2{
+    border: 1px solid #E7E7E7;
+    font-family: Quicksand;
+
+}
+.nametopic2 h3{
+    color:#ED7839
+}
+
+.descriptionTopic2 p {
+    margin: 0;
+    font-family: Quicksand;
+
+}
