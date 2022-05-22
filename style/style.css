@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: #E5E5E5;
+}
 header{
     height: 88px;
     background-color:  #FDF1EB;
@@ -68,10 +70,100 @@ header{
 }
 
 .logo{
-float: left;
+    display: flex;
+    flex-direction: column;
+    background-color:  #FFFFFF;
+    
+}
+
+.logo button{
+    background-color:  #FFFFFF;
+    width: 220px;
+    height: 33px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 15px;
+    border : #4E4E4E dotted 1px
 }
 
 .page{
+    display: flex;
+    height: 800px;
+}
+
+.main{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 21% 55% 25%
+    
+}
+
+.menuright{
+    grid-column: 3
+    
+}
+
+.description {
+    grid-column: 2;
+    width: 100%;
+
+}
+.description h2{
+    margin-bottom: 20px 30px 40px 20px;
+    color: #ED7839;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+.video img{
+    grid-column: 2;
+    width: 100%;
+    height: 90%;
+    padding-right: 30px;    
+}
+
+.menuright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    height: 300px;
+
+}
+
+.menubutton{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    
+}
+.menubutton button{
+    background-color: #ED7839;
+    border: none;
+    border-radius: 4px;
+}
+
+.menubutton .download{
+    width: 120px;
+    height: 30px;
+    background-color: #ED7839;
+    border: none;
+    border-radius: 4px;
+}
+.menudetails h3{
+    color: #ED7839;
+    margin-left: 5px;
+
+}
+.menudetails h2{
+    padding: 10px;
+    background-color: #ECECEC;
+    color:#4E4E4E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
 }
