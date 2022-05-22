@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
 }
 header{
     height: 88px;
@@ -160,10 +160,113 @@ header{
 }
 .menudetails h2{
     padding: 10px;
-    background-color: #ECECEC;
+    background-color: #FDF1EB;
     color:#4E4E4E;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
     align-items: center;
 }
+
+.menudetails{
+    width: 242px;
+    height: 440px;
+    font-family: Quicksand;
+    font-size: 14px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+
+.autors{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 900;
+
+}
+
+.university{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.names{
+    margin-top: 20px;
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 74%;
+    height: 190px;
+    margin-top: 50px;
+    margin-left: 270px;
+    border: 1px solid #ECECEC;
+
+}
+
+.title2{
+    display: flex;
+    background-color: #FDF1EB;
+    font-size: 15px;
+    height: 45px;
+    color:#4E4E4E;
+    font-family: 'Roboto';
+    align-items: center;
+    border-radius: 3px;
+
+}
+.discussion{
+    margin-top: 20px;
+    border: solid 1px #ECECEC;
+    width: 74%;
+    margin-left: 270px;
+
+}
+.titleDiscussion{
+    display: flex;
+    background-color: #FDF1EB    ;
+    font-size: 15px;
+    align-items: center;
+    color:#4E4E4E;
+    font-family: 'Roboto';
+    height: 45px;
+    
+
+}
+.discussion{
+    margin-left: 270px;
+    height: 400px;
+}
+.discussion p{
+    display: flex;
+    text-align: center;
+    margin-left: 270px;
+    color:#ED7839
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+ }
+
+ .icons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+ .suggest p{
+     display: flex;
+     justify-content: center;
+     color:#595959;
+     font-family: 'Quicksand';
+     font-weight: 400;
+    margin: 10px;
+ }
+
+ .buttonTopic{
+     display: flex;
+     justify-content: center;
+ }
