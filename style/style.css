@@ -130,13 +130,21 @@ header{
 }
 
 .video img{
+    
     grid-column: 2;
-    width: 100%;
+    width: 95%;
     height: 90%;
-    padding-right: 30px;    
+    padding-right: 30px;
+    
+    
 }
 .video{
-    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+   
+    
     
 }
 .menuright{
@@ -385,4 +393,88 @@ footer {
     
 }
 
+
+
+@media (max-width: 700px){
+
+    .main{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    
+    .headerMobile{
+        display: flex;
+        height: 68px;
+        width: 100vw;
+        justify-content: space-between;
+       
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .title h2{
+        
+        font-size: 14px;
+    }
+
+   .painel {
+       width: 20%;
+       display: flex;
+       justify-content: flex-end;
+       margin-right: 25px;
+   }
+    .linguage{
+        display: none;
+    }
+    .email{
+        display: none;
+    }
+
+    .menuright{
+        display: none;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .video img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main2{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume{
+        margin: 20px 0px 20px 0px ;
+        width: 95%;
+        
+        
+    }
+
+    .discussion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px ;
+        align-content: center;
+        height: 670px;
+    }
+
+}
 
