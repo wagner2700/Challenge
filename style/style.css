@@ -5,6 +5,7 @@
 }
 body{
     background-color: #FFFFFF;
+    height: 100vh;
 }
 header{
     height: 88px;
@@ -73,10 +74,11 @@ header{
 }
 
 .logo{
+    grid-column:2;
     display: flex;
     flex-direction: column;
     background-color:  #FFFFFF;
-    height: 10000px;
+    
     
 }
 
@@ -97,7 +99,9 @@ header{
 
 .main{
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    height: auto;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 20% 20% 20% 20% 20% 20% 20%;
     
     
     
@@ -201,9 +205,7 @@ header{
 }
 
 .resume{
-    
-    
-    
+    grid-row: 1;
     height: 190px;
     margin-top: 50px;
     border: 1px solid #ECECEC;
@@ -227,11 +229,14 @@ header{
 
 }
 .discussion{
+    align-content: center;
     margin-top: 20px;
     border: solid 1px #ECECEC;
-   
+    grid-row: 2;
     grid-column: 2 / 4;
     margin-right: 70px;
+    width: auto;
+    height: 2000px;
     
 
 }
@@ -249,8 +254,8 @@ header{
 }
 .discussion{
     
-   
-    height: 400px;
+   justify-items: center;
+    height: 590px;
     grid-column: 2 / 4;
     
 }
@@ -302,31 +307,40 @@ header{
 
 }
 .topic{
+    justify-content: center;
+    align-content: center;
     border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     margin-top: 20px;
-    padding: 30px;
+    
+    padding: 15px;
+    width: 98%;
     height: 150px;
 }
 .titleTopic1{
     color:#ED7839;
+    margin: 3px 0 3px 25px;
     font-family: 'Quicksand';
     font-size: 16px;
     font-weight: 700;
 
 }
 .descriptionTopic1 p{
-    margin: 0px;
+    margin: 10px 0 10px 25px;
     display: flex;
     font-family: 'Quicksand';
+    font-size: 16px;
     color: #4D4D4D;
+    text-align: justify;
 }
 .topic2{
     border: 1px solid #E7E7E7;
     font-family: Quicksand;
 
 }
-.nametopic2 h3{
-    color:#ED7839
+.nametopic1 h3{
+    color:#5C5C5C;
+    margin-left: 25px;
 }
 
 .descriptionTopic2 p {
@@ -334,3 +348,28 @@ header{
     font-family: Quicksand;
 
 }
+
+.main2{
+    display: grid;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 20% 20% 20% 20% 20% ;
+    height: 900px;
+    
+
+    
+}
+
+footer {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 100px
+}
+
+.topic{
+    width: 95%;
+    justify-content: flex-end;
+}
+
+
