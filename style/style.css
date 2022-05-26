@@ -269,12 +269,10 @@ header{
 }
 
 .resume{
-    display: block;
-    grid-row: 1;
-    height: 190px;
+
+    height: 100px;
     margin-top: 50px;
     border: 1px solid #ECECEC;
-    grid-column: 2 / 4;
     width: 95%;
     justify-content: center;
     margin-left: 27px;
@@ -283,25 +281,7 @@ header{
 
 }
 
-.resume :checked{
-    animation: resume-animation 1s ease  ;
-    display: block;
-   
 
-}
-
-
-@keyframes resume-animation {
-    
-    
-
-    to
-     {
-        height: 500px;
-    };
-    
-    
-}
 .title2{
     display: flex;
     background-color: #FDF1EB;
@@ -315,6 +295,54 @@ header{
     
 
 }
+
+.title2 h2 {
+    cursor:pointer;
+}
+
+.lorem{
+    height: 50px;
+    white-space:wrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    
+
+}
+.trigger-input{
+    display: none;
+}
+
+.trigger-input:checked + .resume .lorem  {
+    /* transition-duration: e; */
+    color: blue;
+    height: 800px ease 1s;
+    transition-duration: 1s;
+    white-space:normal;
+    overflow:visible
+
+}
+.trigger-input:checked + .resume {
+    white-space:normal;
+    height: 600px;
+    text-overflow:ellipsis;
+    overflow:visible
+    
+
+}
+
+
+.content{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    
+  
+}
+
 .discussion{
     
     border: solid 1px #ECECEC;
@@ -325,6 +353,8 @@ header{
 
    
 }
+
+
 .titleDiscussion{
     display: flex;
     background-color: #FDF1EB    ;
@@ -448,10 +478,11 @@ header{
 }
 
 .main2{
-    display: grid;
-    grid-template-columns: 15% 70% 15% ;
-    grid-template-rows: 25% 25% 20% 20% 20% 20% 20% 20% ;
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    gap: 20px;
 }
 
 footer {
