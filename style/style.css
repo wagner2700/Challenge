@@ -315,17 +315,18 @@ header{
 .trigger-input:checked + .resume .lorem  {
     /* transition-duration: e; */
     color: blue;
-    height: 800px ease 1s;
     transition-duration: 1s;
     white-space:normal;
     overflow:visible
 
 }
 .trigger-input:checked + .resume {
+    display: block;
     white-space:normal;
-    height: 600px;
-    text-overflow:ellipsis;
-    overflow:visible
+    height: 550px;
+    transition-duration: 1s;
+    
+    
     
 
 }
@@ -344,13 +345,13 @@ header{
 }
 
 .discussion{
-    
+    display:flex;
+    flex-direction: column;
     border: solid 1px #ECECEC;
-    grid-row: 2 / 5;
-    grid-column: 2;
     width: 95%;
+    height: 100px;
     margin-left: 27px;
-
+   
    
 }
 
@@ -481,7 +482,6 @@ header{
     margin-left: 260px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     gap: 20px;
 }
 
@@ -565,6 +565,7 @@ footer {
     }
 
     .main2{
+        
         display: flex;  
         flex-direction: column;
         align-items: center;
