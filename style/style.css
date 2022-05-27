@@ -366,7 +366,7 @@ header{
     margin-left: 27px; */
 }
 .triggerTopic:checked +.discussion .subDiscussion  {
-    color: yellow;
+
     display: none;
       
     }
