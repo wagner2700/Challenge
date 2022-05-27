@@ -315,7 +315,7 @@ header{
 .trigger-input:checked + .resume .lorem  {
     /* transition-duration: e; */
     color: blue;
-    transition-duration: 1s;
+    transition-delay: 0.5s;
     white-space:normal;
     overflow:visible
 
@@ -324,7 +324,7 @@ header{
     display: block;
     white-space:normal;
     height: 550px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     
     
     
@@ -354,6 +354,65 @@ header{
    
    
 }
+
+
+
+.triggerTopic:checked + .discussion .sendDiscussion  {
+    display:block;
+    /* flex-direction: column;
+    border: solid 10px #ECECEC;
+    width: 95%;
+    height: 100px;
+    margin-left: 27px; */
+}
+.triggerTopic:checked +.discussion .subDiscussion  {
+    color: yellow;
+    display: none;
+      
+    }
+.sendDiscussion{
+    display: none;
+    border: solid 1px #ECECEC;
+    width: 100%;
+    height: 200px;
+   
+    justify-content: center;
+}
+.sendDiscussion .textSendDiscussion  {
+    color: #5C5C5C;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 25px 0 30px 0;
+}
+.titleSendDiscussion{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    color:#4E4E4E;
+    font-family: 'Roboto';
+    font-size: 14px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.textSend {
+   color: #ED7839;
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+}
+
 
 
 .titleDiscussion{
@@ -409,7 +468,7 @@ header{
      justify-content: center;
 
  }
- .buttonTopic button{
+ .buttonTopic p{
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);   
     border:none;
     width: 133px;
@@ -419,6 +478,7 @@ header{
     color: white;
     font-size: 15px;
     font-weight: 700;
+    align-items: center;
 
 
 }
@@ -497,6 +557,8 @@ footer {
     width: 95%;
     
 }
+
+
 
 
 
