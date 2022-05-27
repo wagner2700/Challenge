@@ -460,13 +460,13 @@ color: white;
 }
 
 .trigguer2-input:checked + .test12 .sendDiscussion {
-   display: block;
+   display: none;
    
 }
 
 .trigguer2-input:checked + .test12 .testethanks{
     display: block;
-    width: 50px;
+    width: 500px;
     height: 50px;
     background-color: yellow;
 }
